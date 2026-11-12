@@ -1,0 +1,26 @@
+package arrayquestions;
+
+public class MergeTwoArrayGivenConstant {
+
+	public static void main(String[] args) {
+		int X[] = { 0, 2, 0, 3, 0, 5, 6, 0, 0 };
+		int Y[] = { 1, 8, 9, 10, 15 };
+		int k=0;
+		
+		for(int i=0;i<X.length;i++)
+		{
+			if(X[i]==0)
+			{
+				X[i]=Y[k];
+				k++;
+			}
+		}
+		
+		for(int i=0;i<X.length;i++)
+		{
+			System.out.println(X[i]+" ");
+		}
+
+	}
+
+}
